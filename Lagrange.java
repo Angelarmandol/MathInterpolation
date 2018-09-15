@@ -1,4 +1,4 @@
-package interpolation;
+package pck;
 
 import java.util.Vector;
 
@@ -6,6 +6,8 @@ public class Lagrange implements InterpolationMethod {
 	private int n = 0;
 	private double sum = 0, product = 0;
 
+	
+	@Override
 	public double calculateResult(double t, Vector<Double> xx, Vector<Double> yy){
 		n = xx.size();
 			
